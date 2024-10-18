@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "211bb2f1-39de-4795-9e45-b0436c5fc170",
+		"name": "Automotive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38686328"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"middleName\": \"Doe\",\r\n    \"lastName\": \"Smith\",\r\n    \"nationalityId\": 1,                    // Example ID for nationality\r\n    \"registrationPurposeId\": 2,            // Example ID for registration purpose\r\n    \"passportIdNumber\": \"A12345678\",       // Passport ID number\r\n    \"professionId\": 3,                      // Example ID for profession\r\n    \"contactNumber\": \"1234567890\",         // User's contact number\r\n    \"countryName\": \"United States\",         // User's country\r\n    \"city\": \"New York\",                     // User's city\r\n    \"stateProvince\": \"NY\",                  // User's state or province\r\n    \"email\": \"john@example.com\",            // User's email\r\n    \"genderId\": 1,                         // Example ID for gender\r\n    \"postalCode\": \"10001\",                  // User's postal code\r\n    \"fullResidentialAddress\": \"123 Main St, New York, NY 10001\", // Full residential address\r\n    \"acceptTerms\": true,                    // User accepts terms and conditions\r\n    \"userTypeId\": 1,                        // Example ID for user type\r\n    \"password\": \"your_secure_password\",     // User's password (ensure to hash this before saving in production)\r\n                        // Optional file number or ID\r\n    \"roleId\": 1,                            // Example ID for user role\r\n    \"statusId\": 1                           // Example ID for status\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"josn@ssssssss.com\",           \r\n    \"password\": \"your_secure_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"contactNumber\": \"1234567890\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/update/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin Copy 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"josn@ssssssss.com\",           \r\n    \"password\": \"your_secure_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/approved",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"approved"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notapproved",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"josn@ssssssss.com\",           \r\n    \"password\": \"your_secure_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/not-approved",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"not-approved"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notapproved Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"josn@ssssssss.com\",           \r\n    \"password\": \"your_secure_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/not-approved",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"not-approved"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
